@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  28 MAR 2026 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  29 MAR 2026 01:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**acres_poster.tex
-(./acres_poster.tex
+**/home/peniel/WebstormProjects/acres_poster_project/.idea/acres_poster.tex
+(/home/peniel/WebstormProjects/acres_poster_project/.idea/acres_poster.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/tikzposter/tikzposter.cls
@@ -865,7 +865,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count336
 \l__pdf_internal_box=\box101
 )
-(/home/benjaminketteytagoe/Downloads/acres_poster_project/out/acres_poster.aux
+(/home/peniel/WebstormProjects/acres_poster_project/out/acres_poster.aux
 <Reading QR code for "https://example.com/demo" at level 2-M from aux file.>
 )
 \openout1 = `acres_poster.aux'.
@@ -1034,15 +1034,15 @@ File: alu-logo-white-full.png Graphic file (type png)
 Package pdftex.def Info: alu-logo-white-full.png  used on input line 101.
 (pdftex.def)             Requested size: 549.4511pt x 99.58464pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <29.86> on input line 113.
+(Font)              <29.86> on input line 112.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-25.
+24.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-34.
+33.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1063,7 +1063,7 @@ y calculated.>
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./alu-logo
 -white-full.png>]
-(/home/benjaminketteytagoe/Downloads/acres_poster_project/out/acres_poster.aux
+(/home/peniel/WebstormProjects/acres_poster_project/out/acres_poster.aux
 <Reading QR code for "https://example.com/demo" at level 2-M from aux file.>
 )
  ***********
@@ -1072,22 +1072,22 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 22902 strings out of 476182
- 474585 string characters out of 5795595
- 2005975 words of memory out of 5000000
- 44383 multiletter control sequences out of 15000+600000
- 651174 words of font info for 142 fonts, out of 8000000 for 9000
+ 22947 strings out of 476182
+ 475237 string characters out of 5795595
+ 2008975 words of memory out of 5000000
+ 44385 multiletter control sequences out of 15000+600000
+ 657617 words of font info for 164 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 117i,12n,121p,1009b,1087s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,12n,121p,1066b,1087s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmtt12.pfb>
-Output written on /home/benjaminketteytagoe/Downloads/acres_poster_project/out/
-acres_poster.pdf (1 page, 142309 bytes).
+Output written on /home/peniel/WebstormProjects/acres_poster_project/out/acres_
+poster.pdf (1 page, 158008 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 39538 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 41586 words of extra memory for PDF output out of 42996 (max. 10000000)
 

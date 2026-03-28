@@ -107,25 +107,24 @@
 \column{0.30}
 
 \block{1. Problem, Context, and Users}{
-\takeawaybox{Engineering problem and why solving it matters.}
-
-\textbf{{50\% of Kigali's population lives in rentals; current informal systems cannot scale with Rwanda's rapid urbanization.}} In \boldmath{Rwanda} struggle with, \underline{users} struggle with \underline{problem}. Existing approaches fall short because \underline{gap}. We designed \underline{solution} to improve \underline{outcome}.
+\takeawaybox{Mordenizing rental management to secure housing and financial transparency}
+50\% of Kigali's population lives in rentals; current informal systems cannot scale with Rwanda's rapid urbanization. In \boldmath{Rwanda} struggle with, \underline{users} struggle with \underline{problem}. Existing approaches fall short because \underline{gap}. We designed \underline{solution} to improve \underline{outcome}.
 }
 
 \block{2. Objectives and Scope}{
 Keep this section tight and measurable.
 
 \begin{itemize}
-  \item \textbf{Aim:} Build and evaluate a system for \dots
-  \item \textbf{Objective 1:} Design the workflow / architecture.
-  \item \textbf{Objective 2:} Implement the prototype or model.
-  \item \textbf{Objective 3:} Test usability, performance, or reliability.
-  \item \textbf{Scope:} What is included now, and what is not?
+  \item \textbf{Aim:} Build a centralized web platform to digitize property manageement and lease compliance.
+  \item \textbf{Objective 1:} Design a multi-unit dashboard for financial and occupancy oversight.
+  \item \textbf{Objective 2:} Implement a secure digital vault for lease agreements and automated invoicing.
+  \item \textbf{Objective 3:} Deploy a QR Code based maintenance reporting system for frictionless tenant use.
+  \item \textbf{Scope:} Includes lease tracking, payment logging, and maintenance; excludes automated bank integration and IoT smart locks.
 \end{itemize}
 }
 
 \block{3. Project Metadata}{
-\projectmeta{Add team members}{Add programme / cohort}{Add faculty or external mentors}{\texttt{scan for demo / repo / appendix}}
+\projectmeta{Eelaf Adam \textbar\ Becky Alek \textbar\ Prince Niyomugabo |\ Tumba II Kongolo |\ Peniel Obeng |\ Benjamin Kettey-Tagoe}{BSE - Foundations Project / C2}{David Neza Tuyishimire}{\texttt{scan for demo / repo / appendix}}
 
 \vspace{0.5em}
 \begin{center}
@@ -137,10 +136,10 @@ Keep this section tight and measurable.
 Posters are stronger when they show real engineering trade-offs.
 
 \begin{itemize}
-  \item Connectivity, power, budget, or hardware constraints
+  \item \textbf{Constraints:} Must be mobile-responsive for low-bandwidth environments; must comply with the 2021 Rwanda Data Protection Act
   \item Data quality, privacy, security, or compliance issues
-  \item Why you chose this architecture, model, stack, or device setup
-  \item Main trade-off: what you optimized for, and what you sacrificed
+  \item \textbf{Decisions:} Chose Next.js and MySQL for high performance and structured data integrity.
+  \item \textbf{Trade-off:} Optimized for simplicity and low barrier to entry (QR Codes) over complex features that would require tenant app downloads
 \end{itemize}
 }
 
@@ -151,9 +150,8 @@ Posters are stronger when they show real engineering trade-offs.
 \takeawaybox{The centre column should be the visual anchor of the whole poster.}
 
 \begin{minipage}[t]{0.48\linewidth}
-\textbf{Solution summary}
-
-Describe the end-to-end flow in one short paragraph. Focus on what enters the system, what happens inside, and what the user gets out of it.
+\textbf{Solution summary:}
+Acres is an "Administrative Engine" that transforms property management from notebooks to a digital dashboard. Landlords upload leases and track rent, while tenants use unit-specific QR codes to trigger maintenance workflows. The system centralizes data, providing automated alerts and transparent financial history.
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\linewidth}
@@ -173,18 +171,18 @@ Describe the end-to-end flow in one short paragraph. Focus on what enters the sy
 \begin{minipage}[t]{0.48\linewidth}
 \textbf{Research / discovery}
 \begin{itemize}
-  \item User interviews, observation, or precedent review
-  \item Requirement gathering and feasibility checks
-  \item Risk, ethics, or context analysis
+  \item \textbf{User Interviews:} Engaged 12 independent landlords in Kigali
+  \item \textbf{Info Gathering:} Defined core needs like digital lease storage and payment logging
+  \item \textbf{Context Analysis:} Analyzed Rwanda’s Data Protection Act to ensure PII compliance.
 \end{itemize}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\linewidth}
 \textbf{Engineering / implementation}
 \begin{itemize}
-  \item Architecture and design choices
-  \item Prototype iterations and testing
-  \item Deployment, simulation, or demo setup
+  \item \textbf{Architecture:} Developed a 3-tier system with Next.js/Node.js/MySQL.
+  \item \textbf{Prototyping:} QR-code scanning to ensure compatibility with mid-range mobile cameras.
+  \item \textbf{Testing:} Conducted UAT to measure task completion speed
 \end{itemize}
 \end{minipage}
 
@@ -194,11 +192,11 @@ Describe the end-to-end flow in one short paragraph. Focus on what enters the sy
 \toprule
 \textbf{Stage} & \textbf{What to show briefly} \\
 \midrule
-Discover & users, needs, constraints, baseline findings \\
-Design & flows, architecture, rationale, sketches \\
-Build & key components, integrations, implementation choices \\
-Test & usability, speed, accuracy, reliability, feedback \\
-Iterate & what changed after evidence or testing \\
+Discover & Identified 60 revenue leackage in manual tracking \\
+Design & Created a centralized Admin Engine and QR-Code ticketting \\
+Build & Tailwind CSS, bcrypt for responsiveness and security\\
+Test & Achieved 95 task success rate for digital lease uploads \\
+Iterate & Simplified the interface after initial feedback \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -216,18 +214,18 @@ Iterate & what changed after evidence or testing \\
 \vspace{0.5em}
 \begin{minipage}[t]{0.48\linewidth}
 \begin{itemize}
-  \item Show 2--4 quantitative results only
-  \item Include one user or field insight if relevant
-  \item Compare against a baseline where possible
+  \item Payment log time reduced to 1.8s
+  \item 100 pilot leases successfully digitized
+  \item 11 out of 12 landlords reported the dashboard was highly intuitive
 \end{itemize}
 \begin{center}\fcolorbox{ALUBlueLine}{ALUBlueLight}{\parbox[c][3.7cm][c]{0.95\linewidth}{\centering\bfseries\Large Chart, benchmark, confusion matrix, or evaluation table}}\end{center}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\linewidth}
 \begin{itemize}
-  \item What can be demonstrated live today?
-  \item Which workflow is fully working?
-  \item What remains simulated or partial?
+  \item Full end-to-end maintenance request cycle
+  \item Lease Vault fully operational with automated alerts
+  \item Payment is currently simulated via manual input
 \end{itemize}
 \begin{center}\fcolorbox{ALUBlueLine}{ALUBlueLight}{\parbox[c][3.7cm][c]{0.95\linewidth}{\centering\bfseries\Large Demo storyboard, product screenshot, or device photo}}\end{center}
 \end{minipage}
@@ -237,26 +235,25 @@ Iterate & what changed after evidence or testing \\
 \column{0.30}
 
 \block{8. Impact, Contribution, and Learning}{
-Frame the contribution at three levels.
+\textbf{Frame the contribution at three levels.}
 
 \begin{itemize}
-  \item \textbf{Technical:} What did you build, optimize, or integrate?
-  \item \textbf{User:} What becomes easier, faster, safer, cheaper, or more inclusive?
-  \item \textbf{Research:} What did you learn, validate, or discover?
-  \item \textbf{Mission:} Why does this matter in an ALU / African context?
+  \item \textbf{Technical:} Integrated a QR-to-Web workflow that eliminates the need for tenant-side authentication while maintaining data accuracy.
+  \item \textbf{User:} Landlords gain financial visibility; tenants receive documented proof of payments and faster maintenance response.
+  \item \textbf{Research:} Validated that small-scale landlords prioritize "legal security" over "complex accounting features."
+  \item \textbf{Mission:} Supports Rwanda’s National Housing Policy by professionalizing the informal rental sector through accessible tech.
 \end{itemize}
 
 \takeawaybox{Do not just show that it works. Show why it matters.}
 }
 
 \block{9. Limitations and Next Steps}{
-Strong projects acknowledge what is still unfinished.
+\textbf{Strong projects acknowledge what is still unfinished.}
 
 \begin{itemize}
-  \item Limitations in data, hardware, testing scope, or deployment
-  \item Assumptions and known failure points
-  \item Immediate next iteration toward real-world use
-  \item Long-term future work or scaling path
+  \item \textbf{Limitaions:} Currently relies on manual input for payment verification rather than direct mobile money (Momo) API integration.
+  \item \textbf{Assumptions:} Assumes landlords have basic digital literacy and consistent smartphone access.
+  \item \textbf{Next Steps:} Integrate local payment gateways (MTN/Airtel) for real-time automated rent reconciliation.
 \end{itemize}
 }
 
@@ -264,14 +261,14 @@ Strong projects acknowledge what is still unfinished.
 \textbf{References}
 
 \begin{itemize}
-  \item Author, A. (Year). Title. Journal or Conference.
-  \item Author, B. (Year). Title. Source.
-  \item Author, C. (Year). Title. Source.
+    \item World Bank. (2018). Rwanda Affordable Housing Finance Project. \textit{Project Appraisal Document}.
+    \item MININFRA. (2015). National Housing Policy. \textit{Government of the Republic of Rwanda}.
+    \item Bwatete, A. E. (2018). Smart technology in collecting land lease fees in Rwanda. \textit{University of Rwanda}.
 \end{itemize}
 
 \textbf{Acknowledgements}
 
-Thank supervisors, labs, partners, participants, funders, or collaborators.
+We thank our supervisor, David Neza Tuyishimire, and the participants from Bumbogo and Kimironko for their valuable insights.
 }
 
 \end{columns}
