@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  29 MAR 2026 01:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.28)  29 MAR 2026 03:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/peniel/WebstormProjects/acres_poster_project/.idea/acres_poster.tex
-(/home/peniel/WebstormProjects/acres_poster_project/.idea/acres_poster.tex
+**acres_poster.tex
+(./acres_poster.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/tikzposter/tikzposter.cls
@@ -855,8 +855,8 @@ Package: qrcode 2015/01/08 v1.51 QR code generation
 zlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 99
-.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+1.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -865,25 +865,25 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count336
 \l__pdf_internal_box=\box101
 )
-(/home/peniel/WebstormProjects/acres_poster_project/out/acres_poster.aux
+(/home/benjaminketteytagoe/Downloads/acres_poster_project/out/acres_poster.aux
 <Reading QR code for "https://example.com/demo" at level 2-M from aux file.>
 )
 \openout1 = `acres_poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count337
@@ -910,16 +910,16 @@ e
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a0paper
+* paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: landscape 
-* h-part:(L,W,R)=(0.0pt, 3383.03267pt, 0.0pt)
-* v-part:(T,H,B)=(0.0pt, 2392.87677pt, 0.0pt)
-* \paperwidth=3383.03267pt
-* \paperheight=2392.87677pt
-* \textwidth=3383.03267pt
-* \textheight=2392.87677pt
+* h-part:(L,W,R)=(0.0pt, 3414.3307pt, 0.0pt)
+* v-part:(T,H,B)=(0.0pt, 3383.03267pt, 0.0pt)
+* \paperwidth=3414.3307pt
+* \paperheight=3383.03267pt
+* \textwidth=3414.3307pt
+* \textheight=3383.03267pt
 * \oddsidemargin=-72.26999pt
 * \evensidemargin=-72.26999pt
 * \topmargin=-109.26999pt
@@ -943,62 +943,62 @@ e
 <alu-logo-white-full.png, id=29, 1262.7175pt x 228.855pt>
 File: alu-logo-white-full.png Graphic file (type png)
 <use alu-logo-white-full.png>
-Package pdftex.def Info: alu-logo-white-full.png  used on input line 99.
+Package pdftex.def Info: alu-logo-white-full.png  used on input line 111.
 (pdftex.def)             Requested size: 549.4511pt x 99.58464pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
-9.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+11.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
-9.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+11.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-99.
+111.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-99.
+111.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 99.
+(Font)              <17.28> on input line 111.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 99.
+(Font)              <12> on input line 111.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 99.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
-
+(Font)              <10> on input line 111.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 111
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 111
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Info: Redefining \microtypecontext on input line 99.
-Package microtype Info: Applying patch `item' on input line 99.
-Package microtype Info: Applying patch `toc' on input line 99.
-Package microtype Info: Applying patch `eqnum' on input line 99.
-Package microtype Info: Applying patch `footnote' on input line 99.
-Package microtype Info: Applying patch `verbatim' on input line 99.
+LaTeX Info: Redefining \microtypecontext on input line 111.
+Package microtype Info: Applying patch `item' on input line 111.
+Package microtype Info: Applying patch `toc' on input line 111.
+Package microtype Info: Applying patch `eqnum' on input line 111.
+Package microtype Info: Applying patch `footnote' on input line 111.
+Package microtype Info: Applying patch `verbatim' on input line 111.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 99.
+LaTeX Info: Redefining \showhyphens on input line 111.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1012,17 +1012,26 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 File: alu-logo-white-full.png Graphic file (type png)
 <use alu-logo-white-full.png>
-Package pdftex.def Info: alu-logo-white-full.png  used on input line 101.
+Package pdftex.def Info: alu-logo-white-full.png  used on input line 113.
 (pdftex.def)             Requested size: 549.4511pt x 99.58464pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/61.92'.
 (microtype)             Ignoring protrusion settings for this character.
+
+LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
+(Font)              using `T1/lmr/bx/n' instead on input line 113.
+
+
+Overfull \hbox (266.74579pt too wide) in paragraph at lines 113--113
+ [][] 
+ []
+
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 101.
+(Font)              <24.88> on input line 113.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 101.
+(Font)              <20.74> on input line 113.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 101.
+(Font)              <14.4> on input line 113.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -1031,18 +1040,27 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 File: alu-logo-white-full.png Graphic file (type png)
 <use alu-logo-white-full.png>
-Package pdftex.def Info: alu-logo-white-full.png  used on input line 101.
+Package pdftex.def Info: alu-logo-white-full.png  used on input line 113.
 (pdftex.def)             Requested size: 549.4511pt x 99.58464pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <29.86> on input line 112.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-24.
 
+Overfull \hbox (266.74579pt too wide) in paragraph at lines 113--113
+ [][] 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <29.86> on input line 128.
+<acres_intro_image.png, id=31, 1541.76pt x 1027.84pt>
+File: acres_intro_image.png Graphic file (type png)
+<use acres_intro_image.png>
+Package pdftex.def Info: acres_intro_image.png  used on input line 128.
+(pdftex.def)             Requested size: 541.52448pt x 361.00407pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+40.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-33.
+55.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1053,41 +1071,95 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
+./acres_poster.tex:155: LaTeX Error: Environment justify undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155         }
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 
 <QR code requested for "https://example.com/demo" in version 0-M.>
 
 <Copying the QR code for "https://example.com/demo" in version 2-M as previousl
 y calculated.>
+
+
+<QR code requested for "https://example.com/demo" in version 0-M.>
+
+<Copying the QR code for "https://example.com/demo" in version 2-M as previousl
+y calculated.>
+
+./acres_poster.tex:155: LaTeX Error: \begin{columns} on input line 115 ended by
+ \end{justify}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155         }
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<acres_systemarchitecture.jpeg, id=32, 823.075pt x 687.56876pt>
+File: acres_systemarchitecture.jpeg Graphic file (type jpg)
+<use acres_systemarchitecture.jpeg>
+Package pdftex.def Info: acres_systemarchitecture.jpeg  used on input line 197.
+
+(pdftex.def)             Requested size: 616.84557pt x 515.2976pt.
+<acres_image2.jpeg, id=33, 1284.8pt x 830.10126pt>
+File: acres_image2.jpeg Graphic file (type jpg)
+<use acres_image2.jpeg>
+Package pdftex.def Info: acres_image2.jpeg  used on input line 271.
+(pdftex.def)             Requested size: 740.22221pt x 478.26717pt.
+<acres_image.jpeg, id=34, 896.34875pt x 1606.0pt>
+File: acres_image.jpeg Graphic file (type jpg)
+<use acres_image.jpeg>
+Package pdftex.def Info: acres_image.jpeg  used on input line 326.
+(pdftex.def)             Requested size: 539.8173pt x 967.23428pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./alu-logo
--white-full.png>]
-(/home/peniel/WebstormProjects/acres_poster_project/out/acres_poster.aux
+-white-full.png> <./acres_intro_image.png (PNG copy)> <./acres_systemarchitectu
+re.jpeg> <./acres_image2.jpeg> <./acres_image.jpeg>]
+(/home/benjaminketteytagoe/Downloads/acres_poster_project/out/acres_poster.aux
 <Reading QR code for "https://example.com/demo" at level 2-M from aux file.>
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 22947 strings out of 476182
- 475237 string characters out of 5795595
- 2008975 words of memory out of 5000000
- 44385 multiletter control sequences out of 15000+600000
- 657617 words of font info for 164 fonts, out of 8000000 for 9000
+ 22971 strings out of 476182
+ 475769 string characters out of 5795595
+ 2034975 words of memory out of 5000000
+ 44411 multiletter control sequences out of 15000+600000
+ 657344 words of font info for 159 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 117i,12n,121p,1066b,1087s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,12n,121p,1009b,1121s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmtt12.pfb>
-Output written on /home/peniel/WebstormProjects/acres_poster_project/out/acres_
-poster.pdf (1 page, 158008 bytes).
+Output written on /home/benjaminketteytagoe/Downloads/acres_poster_project/out/
+acres_poster.pdf (1 page, 1314732 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41586 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 43654 words of extra memory for PDF output out of 51595 (max. 10000000)
 
