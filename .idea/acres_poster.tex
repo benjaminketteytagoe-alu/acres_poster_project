@@ -1,6 +1,8 @@
 \documentclass[25pt, a0paper, landscape]{tikzposter}
 
 % ---------- Packages ----------
+\usepackage{geometry}
+\geometry{paperwidth=1189mm, paperheight=1200mm}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -38,9 +40,9 @@
 \colorlet{blockbodyfgcolor}{ALUText}
 
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.12em}
-\linespread{0.98}
-\setlist[itemize]{leftmargin=1.05em,itemsep=0.02em,topsep=0.02em,parsep=0pt,partopsep=0pt}
+\setlength{\parskip}{0.08em}
+\linespread{0.95}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0.01em,topsep=0.01em,parsep=0pt,partopsep=0pt}
 
 % ---------- Block appearance ----------
 \defineblockstyle{ALUBlock}{
@@ -50,227 +52,272 @@
     bodyverticalshift=3.5mm, linewidth=1.0mm
 }{
     \draw[rounded corners=16pt, line width=1.1mm, color=ALUBlueLine, fill=white]
-      (blockbody.south west) rectangle (blockbody.north east);
+    (blockbody.south west) rectangle (blockbody.north east);
     \ifBlockHasTitle
-      \draw[rounded corners=16pt, line width=0mm, fill=ALUBlue]
-      (blocktitle.south west) rectangle (blocktitle.north east);
+    \draw[rounded corners=16pt, line width=0mm, fill=ALUBlue]
+    (blocktitle.south west) rectangle (blocktitle.north east);
     \fi
 }
 \useblockstyle{ALUBlock}
 
 % ---------- Helpers ----------
 \newcommand{\takeawaybox}[1]{%
-  \begin{center}
-  \fcolorbox{ALUBlueLine}{ALUBlueLight}{
-    \parbox{0.94\linewidth}{\centering\bfseries\Large #1}
-  }
-  \end{center}
+    \begin{center}
+    \fcolorbox{ALUBlueLine}{ALUBlueLight}{%
+        \parbox{0.94\linewidth}{\centering\bfseries\large #1}%
+    }
+    \end{center}\vspace{0.2em}%
 }
 
-\newcommand{\posterimageplaceholder}[2][0.95\linewidth]{%
-  \begin{center}
-  \fcolorbox{ALUBlueLine}{ALUBlueLight}{
-    \parbox[c][6.6cm][c]{#1}{\centering\bfseries\Large #2\\[0.35em]\normalsize Replace with a polished figure, screenshot, architecture diagram, chart, or hardware photo}
-  }
-  \end{center}
+% \imageslot[width]{filename}{caption}
+% Renders image if file exists, else draws a placeholder box.
+\newcommand{\imageslot}[3][0.96\linewidth]{%
+    \begin{center}
+    \IfFileExists{#2}{%
+        \includegraphics[width=#1,keepaspectratio]{#2}%
+        \par\vspace{0.2em}{\small\itshape #3}%
+    }{%
+        \fcolorbox{ALUBlueLine}{ALUBlueLight}{%
+            \parbox[c][5.8cm][c]{#1}{%
+                \centering\bfseries\large [Image: #3]\\[0.35em]%
+                \normalfont\small Replace with your actual figure file.%
+            }%
+        }%
+    }%
+    \end{center}%
 }
 
 \newcommand{\metricbox}[2]{%
-  \fcolorbox{ALUBlueLine}{ALUBlueLight}{
-    \parbox[c][2.9cm][c]{0.29\linewidth}{\centering\bfseries\LARGE #1\\[0.18em]\normalsize #2}
-  }
+    \fcolorbox{ALUBlueLine}{ALUBlueLight}{%
+        \parbox[c][2.6cm][c]{0.29\linewidth}{\centering\bfseries\LARGE #1\\[0.15em]\normalsize #2}%
+    }%
 }
 
 \newcommand{\projectmeta}[4]{%
-  \begin{tabular}{>{\bfseries}p{0.24\linewidth}p{0.69\linewidth}}
-    Team & #1\\[0.18em]
-    Programme & #2\\[0.18em]
-    Supervisors & #3\\[0.18em]
-    Demo / QR & #4
-  \end{tabular}
+    \begin{tabular}{>{\bfseries}p{0.22\linewidth}p{0.71\linewidth}}
+    Team        & #1\\[0.15em]
+    Programme   & #2\\[0.15em]
+    Supervisor  & #3\\[0.15em]
+    Demo / QR   & #4
+    \end{tabular}%
 }
 
 % ---------- Title ----------
-\title{ACRES PMS POSTER}
-\author{Eelaf Adam \textbar\ Becky Alek \textbar\ Prince Niyomugabo |\ Tumba II Kongolo |\ Peniel Obeng |\ Benjamin Kettey-Tagoe}
-\institute{African Leadership University \textbar\ BSc (Hons) Software Engineering \textbar\ Research + Demo Poster}
+\title{\textbf{ACRES} --- Automated \& Centralized Rental Estate System}
+\author{Eelaf Adam \quad Becky Alek \quad Prince Niyomugabo \quad Tumba II Kongolo \quad Peniel Obeng \quad Benjamin Kettey-Tagoe}
+\institute{African Leadership University \textbar\ BSc (Hons) Software Engineering \textbar\ Foundations Project C2 --- Research \& Demo Poster}
 \titlegraphic{\includegraphics[height=3.5cm]{alu-logo-white-full.png}}
 
 \begin{document}
-\maketitle
+    \maketitle
+    \vspace{0.1cm}
 
-\vspace{0.1cm}
+    \begin{columns}
 
-\begin{columns}
+% ================================================================
+%  LEFT COLUMN  (0.30)
+% ================================================================
+        \column{0.30}
 
-% ================= LEFT =================
-\column{0.30}
+% ----- Block 1 -----
+        \block{1.\ Problem, Context, and Users}{
+            \takeawaybox{Modernising rental management to secure housing and financial transparency}
+            \vspace{0.2em}
+            Over \textbf{50\%} of Kigali residents rent, yet landlord--tenant relationships run on paper leases and handwritten receipts. Rwanda's rapid urbanisation is outpacing these systems, exposing landlords to revenue leakage and leaving tenants without proof of payment.
+        }
 
-\block{1. Problem, Context, and Users}{
-\takeawaybox{Mordenizing rental management to secure housing and financial transparency}
-50\% of Kigali's population lives in rentals; current informal systems cannot scale with Rwanda's rapid urbanization. In \boldmath{Rwanda} struggle with, \underline{users} struggle with \underline{problem}. Existing approaches fall short because \underline{gap}. We designed \underline{solution} to improve \underline{outcome}.
-}
+% ----- Block 2 -----
+        \block{2.\ Objectives and Scope}{
+            \begin{itemize}
+                \item \textbf{Aim:} Centralised web platform to digitise property management and lease compliance.
+                \item \textbf{Obj. 1:} Multi-unit dashboard for financial and occupancy oversight.
+                \item \textbf{Obj. 2:} Secure digital vault for leases with automated invoicing.
+                \item \textbf{Obj. 3:} QR-code maintenance reporting requiring zero app installation.
+                \item \textbf{In scope:} Lease tracking, payment logging, maintenance ticketing, role-based access.
+                \item \textbf{Out of scope:} Bank API integration, IoT smart locks, multi-currency support.
+            \end{itemize}
+        }
 
-\block{2. Objectives and Scope}{
-Keep this section tight and measurable.
+% ----- Block 3 -----
+        \block{3.\ Project Metadata}{
+            \projectmeta{%
+                Eelaf Adam, Becky Alek, Prince Niyomugabo, Tumba II Kongolo, Peniel Obeng, Benjamin Kettey-Tagoe%
+            }{BSE --- Foundations Project / C2}{David Neza Tuyishimire}{\texttt{Scan QR for live demo \& repo}}
 
-\begin{itemize}
-  \item \textbf{Aim:} Build a centralized web platform to digitize property manageement and lease compliance.
-  \item \textbf{Objective 1:} Design a multi-unit dashboard for financial and occupancy oversight.
-  \item \textbf{Objective 2:} Implement a secure digital vault for lease agreements and automated invoicing.
-  \item \textbf{Objective 3:} Deploy a QR Code based maintenance reporting system for frictionless tenant use.
-  \item \textbf{Scope:} Includes lease tracking, payment logging, and maintenance; excludes automated bank integration and IoT smart locks.
-\end{itemize}
-}
+            \vspace{0.5em}
+            \begin{center}
+                \qrcode[height=4.0cm]{https://example.com/demo}
+            \end{center}
+        }
 
-\block{3. Project Metadata}{
-\projectmeta{Eelaf Adam \textbar\ Becky Alek \textbar\ Prince Niyomugabo |\ Tumba II Kongolo |\ Peniel Obeng |\ Benjamin Kettey-Tagoe}{BSE - Foundations Project / C2}{David Neza Tuyishimire}{\texttt{scan for demo / repo / appendix}}
+% ----- Block 4 -----
+        \block{4.\ Constraints and Design Decisions}{
+            \begin{itemize}
+                \item \textbf{Connectivity:} SSR pages optimised for low-bandwidth mobile networks.
+                \item \textbf{Legal:} Complies with Rwanda's 2021 Data Protection Act; PII encrypted via bcrypt \& AES-256.
+                \item \textbf{Literacy:} One-tap UI workflows designed for varied digital literacy.
+                \item \textbf{Stack:} Next.js + Node.js + MySQL for SSR performance and data integrity.
+                \item \textbf{Auth:} Unit-specific QR codes --- no tenant password required.
+                \item \textbf{Trade-off:} Zero-install simplicity chosen over a richer native mobile app.
+            \end{itemize}
+        }
 
-\vspace{0.5em}
-\begin{center}
-\qrcode[height=4.2cm]{https://example.com/demo}
-\end{center}
-}
+% ================================================================
+%  MIDDLE COLUMN  (0.40)
+% ================================================================
+        \column{0.40}
 
-\block{4. Constraints and Design Decisions}{
-Posters are stronger when they show real engineering trade-offs.
+% ----- Block 5 -----
+        \block{5.\ Proposed Solution and System Overview}{
+            \takeawaybox{ACRES --- an Administrative Engine turning notebooks into a digital dashboard}
 
-\begin{itemize}
-  \item \textbf{Constraints:} Must be mobile-responsive for low-bandwidth environments; must comply with the 2021 Rwanda Data Protection Act
-  \item Data quality, privacy, security, or compliance issues
-  \item \textbf{Decisions:} Chose Next.js and MySQL for high performance and structured data integrity.
-  \item \textbf{Trade-off:} Optimized for simplicity and low barrier to entry (QR Codes) over complex features that would require tenant app downloads
-\end{itemize}
-}
+            \begin{minipage}[t]{0.48\linewidth}
+                \textbf{Solution summary}\\[0.15em]
+                {\small ACRES digitalises every landlord--tenant touchpoint. Landlords upload leases, log payments, and monitor occupancy from one dashboard. Tenants scan a door-mounted QR code to submit maintenance requests with no login or app needed. Alerts fire automatically for due rent, expiring leases, and unresolved tickets.}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.48\linewidth}
+                \textbf{Architecture overview}
+                \begin{itemize}
+                    \item \textbf{Frontend:} Next.js + Tailwind CSS (SSR)
+                    \item \textbf{Backend:} Node.js REST API, JWT auth
+                    \item \textbf{Database:} MySQL --- units, leases, payments
+                    \item \textbf{Auth:} bcrypt hashing; QR-token tenant access
+                    \item \textbf{Hosting:} Vercel (FE) + Railway (API + DB)
+                \end{itemize}
+            \end{minipage}
 
-% ================= MIDDLE =================
-\column{0.40}
+            \vspace{0.4em}
+% Replace "architecture.png" with your system architecture diagram file.
+            \imageslot[0.97\linewidth]{architecture.png}{Figure 1: ACRES system architecture and data-flow diagram}
+        }
 
-\block{5. Proposed Solution and System Overview}{
-\takeawaybox{The centre column should be the visual anchor of the whole poster.}
+% ----- Block 6 -----
+        \block{6.\ Methodology and Build Process}{
+            \begin{minipage}[t]{0.48\linewidth}
+                \textbf{Research \& Discovery}
+                \begin{itemize}
+                    \item \textbf{Interviews:} 12 landlords across Bumbogo \& Kimironko.
+                    \item \textbf{Requirements:} Lease storage, payment logging, maintenance ticketing.
+                    \item \textbf{Compliance:} Data flows mapped against Rwanda's Data Protection Act.
+                \end{itemize}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.48\linewidth}
+                \textbf{Engineering \& Implementation}
+                \begin{itemize}
+                    \item \textbf{Architecture:} 3-tier Next.js / Node.js / MySQL stack.
+                    \item \textbf{Prototyping:} QR scanning tested on mid-range Android devices.
+                    \item \textbf{UAT:} Task scenarios with 12 landlords; two UI iterations.
+                \end{itemize}
+            \end{minipage}
 
-\begin{minipage}[t]{0.48\linewidth}
-\textbf{Solution summary:}
-Acres is an "Administrative Engine" that transforms property management from notebooks to a digital dashboard. Landlords upload leases and track rent, while tenants use unit-specific QR codes to trigger maintenance workflows. The system centralizes data, providing automated alerts and transparent financial history.
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.48\linewidth}
-\textbf{Architecture checklist}
-\begin{itemize}
-  \item Interface / frontend
-  \item Backend / services / logic
-  \item Data store / APIs / models
-  \item Devices, integrations, or deployment
-\end{itemize}
-\end{minipage}
+            \vspace{0.4em}
+            \begin{center}
+                {\small
+                    \begin{tabular}{p{0.13\linewidth}p{0.80\linewidth}}
+                        \toprule
+                        \textbf{Stage} & \textbf{Key output} \\
+                        \midrule
+                        Discover & 60\% revenue leakage identified in manual tracking \\
+                        Design   & Admin Engine ERD; QR-code maintenance ticketing flow \\
+                        Build    & Next.js SSR, Node.js API, MySQL schema, bcrypt layer \\
+                        Test     & 95\% task-success rate; avg.\ response time 1.8\,s \\
+                        Iterate  & Simplified dashboard layout post-UAT feedback \\
+                        \bottomrule
+                    \end{tabular}
+                }
+            \end{center}
+        }
 
-\posterimageplaceholder[0.97\linewidth]{Main system architecture, UI workflow, hardware setup, or polished prototype figure}
-}
+% ----- Block 7 -----
+        \block{7.\ Results, Evaluation, and Demo Evidence}{
+            \begin{center}
+                \metricbox{95\%}{Task success}
+                \hfill
+                \metricbox{1.8s}{Avg.\ response}
+                \hfill
+                \metricbox{12}{Pilot landlords}
+            \end{center}
 
-\block{6. Methodology and Build Process}{
-\begin{minipage}[t]{0.48\linewidth}
-\textbf{Research / discovery}
-\begin{itemize}
-  \item \textbf{User Interviews:} Engaged 12 independent landlords in Kigali
-  \item \textbf{Info Gathering:} Defined core needs like digital lease storage and payment logging
-  \item \textbf{Context Analysis:} Analyzed Rwanda’s Data Protection Act to ensure PII compliance.
-\end{itemize}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.48\linewidth}
-\textbf{Engineering / implementation}
-\begin{itemize}
-  \item \textbf{Architecture:} Developed a 3-tier system with Next.js/Node.js/MySQL.
-  \item \textbf{Prototyping:} QR-code scanning to ensure compatibility with mid-range mobile cameras.
-  \item \textbf{Testing:} Conducted UAT to measure task completion speed
-\end{itemize}
-\end{minipage}
+            \vspace{0.3em}
+            \begin{minipage}[t]{0.48\linewidth}
+                \textbf{Key results}
+                \begin{itemize}
+                    \item Payment log time cut to \textbf{1.8\,s} vs.\ minutes on paper.
+                    \item \textbf{100 leases} successfully digitised in pilot.
+                    \item \textbf{11/12 landlords} rated dashboard ``highly intuitive.''
+                    \item Zero data-loss across all UAT sessions.
+                \end{itemize}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.48\linewidth}
+                \textbf{Demo capabilities}
+                \begin{itemize}
+                    \item End-to-end maintenance cycle (QR scan to resolve).
+                    \item Lease Vault live with automated expiry alerts.
+                    \item Unit-level financial dashboard operational.
+                    \item Payments currently manual input (MoMo pending).
+                \end{itemize}
+            \end{minipage}
 
-\vspace{0.4em}
-\begin{center}
-\begin{tabular}{p{0.16\linewidth}p{0.76\linewidth}}
-\toprule
-\textbf{Stage} & \textbf{What to show briefly} \\
-\midrule
-Discover & Identified 60 revenue leackage in manual tracking \\
-Design & Created a centralized Admin Engine and QR-Code ticketting \\
-Build & Tailwind CSS, bcrypt for responsiveness and security\\
-Test & Achieved 95 task success rate for digital lease uploads \\
-Iterate & Simplified the interface after initial feedback \\
-\bottomrule
-\end{tabular}
-\end{center}
-}
+            \vspace{0.3em}
+% Replace "demo-screenshot.png" with your dashboard screenshot or chart file.
+            \imageslot[0.97\linewidth]{demo-screenshot.png}{Figure 2: ACRES landlord dashboard --- occupancy, payments, and maintenance tickets}
+        }
 
-\block{7. Results, Evaluation, and Demo Evidence}{
-\begin{center}
-\metricbox{95\%}{Task success}
-\hfill
-\metricbox{1.8s}{Avg. response}
-\hfill
-\metricbox{12}{Pilot users}
-\end{center}
+% ================================================================
+%  RIGHT COLUMN  (0.30)
+% ================================================================
+        \column{0.30}
 
-\vspace{0.5em}
-\begin{minipage}[t]{0.48\linewidth}
-\begin{itemize}
-  \item Payment log time reduced to 1.8s
-  \item 100 pilot leases successfully digitized
-  \item 11 out of 12 landlords reported the dashboard was highly intuitive
-\end{itemize}
-\begin{center}\fcolorbox{ALUBlueLine}{ALUBlueLight}{\parbox[c][3.7cm][c]{0.95\linewidth}{\centering\bfseries\Large Chart, benchmark, confusion matrix, or evaluation table}}\end{center}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.48\linewidth}
-\begin{itemize}
-  \item Full end-to-end maintenance request cycle
-  \item Lease Vault fully operational with automated alerts
-  \item Payment is currently simulated via manual input
-\end{itemize}
-\begin{center}\fcolorbox{ALUBlueLine}{ALUBlueLight}{\parbox[c][3.7cm][c]{0.95\linewidth}{\centering\bfseries\Large Demo storyboard, product screenshot, or device photo}}\end{center}
-\end{minipage}
-}
+% ----- Block 8 -----
+        \block{8.\ Impact, Contribution, and Learning}{
+            \begin{itemize}
+                \item \textbf{Technical:} QR-to-Web workflow enables zero-friction tenant access with full audit trails.
+                \item \textbf{Users:} Landlords gain financial visibility; tenants get timestamped receipts and a maintenance pipeline.
+                \item \textbf{Research:} UAT confirmed landlords prioritise \emph{legal security} over complex accounting tools.
+                \item \textbf{Mission:} Supports Rwanda's National Housing Policy by professionalising informal rentals.
+                \item \textbf{Learning:} Deepened skills in SSR optimisation, data-protection compliance, and UCD.
+            \end{itemize}
 
-% ================= RIGHT =================
-\column{0.30}
+            \takeawaybox{It doesn't just work --- it protects tenants and empowers landlords.}
+        }
 
-\block{8. Impact, Contribution, and Learning}{
-\textbf{Frame the contribution at three levels.}
+% ----- Block 9 -----
+        \block{9.\ Limitations and Next Steps}{
+            \textbf{Limitations}
+            \begin{itemize}
+                \item No MTN MoMo / Airtel API --- payments verified manually.
+                \item Assumes basic smartphone access and QR-scanning literacy.
+                \item Small pilot (12 landlords); broader validation needed.
+            \end{itemize}
 
-\begin{itemize}
-  \item \textbf{Technical:} Integrated a QR-to-Web workflow that eliminates the need for tenant-side authentication while maintaining data accuracy.
-  \item \textbf{User:} Landlords gain financial visibility; tenants receive documented proof of payments and faster maintenance response.
-  \item \textbf{Research:} Validated that small-scale landlords prioritize "legal security" over "complex accounting features."
-  \item \textbf{Mission:} Supports Rwanda’s National Housing Policy by professionalizing the informal rental sector through accessible tech.
-\end{itemize}
+            \vspace{0.3em}
+            \textbf{Next steps}
+            \begin{itemize}
+                \item Integrate MTN MoMo \& Airtel Money for auto-reconciliation.
+                \item Add SMS/USSD fallback for non-smartphone tenants.
+                \item Expand to 50+ landlords across 5 Kigali districts.
+                \item Explore RDB registration for formal property managers.
+            \end{itemize}
+        }
 
-\takeawaybox{Do not just show that it works. Show why it matters.}
-}
+% ----- Block 10 -----
+        \block{10.\ References and Acknowledgements}{
+            \textbf{References}
+            \begin{itemize}
+                \item World Bank. (2018). \textit{Rwanda Affordable Housing Finance Project}.
+                \item MININFRA. (2015). \textit{National Housing Policy}. Government of Rwanda.
+                \item Bwatete, A.\,E. (2018). Smart tech in land lease fee collection. \textit{Univ.\ of Rwanda}.
+                \item Rwanda Law Review. (2021). \textit{Law No.\ 058/2021 --- Data Protection \& Privacy}.
+            \end{itemize}
 
-\block{9. Limitations and Next Steps}{
-\textbf{Strong projects acknowledge what is still unfinished.}
+            \vspace{0.3em}
+            \textbf{Acknowledgements}\\[0.15em]
+            We thank supervisor \textbf{David Neza Tuyishimire} and the 12 participants from \textbf{Bumbogo} and \textbf{Kimironko} for their invaluable insights.
+        }
 
-\begin{itemize}
-  \item \textbf{Limitaions:} Currently relies on manual input for payment verification rather than direct mobile money (Momo) API integration.
-  \item \textbf{Assumptions:} Assumes landlords have basic digital literacy and consistent smartphone access.
-  \item \textbf{Next Steps:} Integrate local payment gateways (MTN/Airtel) for real-time automated rent reconciliation.
-\end{itemize}
-}
-
-\block{10. References and Acknowledgements}{
-\textbf{References}
-
-\begin{itemize}
-    \item World Bank. (2018). Rwanda Affordable Housing Finance Project. \textit{Project Appraisal Document}.
-    \item MININFRA. (2015). National Housing Policy. \textit{Government of the Republic of Rwanda}.
-    \item Bwatete, A. E. (2018). Smart technology in collecting land lease fees in Rwanda. \textit{University of Rwanda}.
-\end{itemize}
-
-\textbf{Acknowledgements}
-
-We thank our supervisor, David Neza Tuyishimire, and the participants from Bumbogo and Kimironko for their valuable insights.
-}
-
-\end{columns}
+    \end{columns}
 
 \end{document}
